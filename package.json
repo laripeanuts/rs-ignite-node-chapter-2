@@ -1,0 +1,43 @@
+{
+  "name": "ignite-node-chapter-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "= 18"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "c": "cz",
+    "build": "tsup src --out-dir build",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/eslint": "^8.21.0",
+    "@types/node": "^18.13.0",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.34.0",
+    "supertest": "^6.3.3",
+    "tsup": "^6.6.2",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fastify": "^4.12.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
